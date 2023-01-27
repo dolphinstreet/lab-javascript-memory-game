@@ -88,3 +88,52 @@ p {
   font-size: 20px;
   text-align: center;
 }
+
+
+dialog {
+  margin: auto;
+  padding: 6rem;
+  gap: 20px;
+  background-color: rgb(225, 99, 99);
+  border: 5px solid rgb(222, 61, 61);
+  
+}
+
+dialog::backdrop {
+  backdrop-filter: brightness(50%) blur(3px);
+}
+dialog div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+dialog h2 {
+  color: rgb(102, 17, 17);
+  font-size: 3rem;
+}
+
+dialog p {
+  color: rgb(66, 15, 15);
+  font-size: 2rem;
+}
+
+dialog button  {
+  background-color: hsl(0, 44%, 95%);
+  border: 0;
+  border-radius: 4px;
+  color:  rgb(102, 17, 17);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 12px 16px;
+  text-align: center;
+  transition: all 80ms ease-in-out;
+  font-weight: 800;
+}
+
+
+dialog button:hover {
+  background-color: #852626;
+ 
+  color: white;
+}
